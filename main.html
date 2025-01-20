@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of [Your Name] - Showcasing my skills and projects.">
+    <title>[Your Name] Portfolio</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your external CSS -->
+
+    <!-- Include HLS.js (from CDN)-->
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+</head>
+<body> 
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>[Your Name]</h1>
+            <p>Web Developer | Designer | Programmer</p>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="video-background">
+            <!---Video Element for HLS Streaming-->
+            <video id="video" autoplay loop muted playsinline preload="auto">
+                <!-- Default fallback for browsers that do not support HLS.js or native HLS -->
+                <!-- <source src="video/video.m3u8" type="application/x-mpegURL"> -->
+                Your browser does not support the video tag.
+            </video>
+            <div class="content">
+                <h2>Welcome</h2>
+                <p>Explore my journey in web development and other projects.</p>
+                <a href="#portfolio" class="btn">View My Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hi, I'm [Your Name], a passionate developer with expertise in building web applications that are fast, responsive, and user-friendly.</p>
+            <p>Skills: HTML5, CSS3, JavaScript, React, Node.js</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="container">
+            <h2>My Work</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="project1.jpg" alt="Project 1">
+                    <h3>Project 1</h3>
+                    <p>Short description of the project.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="project2.jpg" alt="Project 2">
+                    <h3>Project 2</h3>
+                    <p>Short description of the project.</p>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>I'd love to hear from you! Fill out the form below or email me at <a href="mailto:yourname@example.com">yourname@example.com</a>.</p>
+            <form action="https://formspree.io/f/yourformendpoint" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

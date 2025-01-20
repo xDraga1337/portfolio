@@ -1,0 +1,236 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure the body and html take up full height */
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Header Styles */
+header {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header p {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff5733;
+}
+
+/* Home Section with Fullscreen Video Background */
+#home {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full height */
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Place the video behind the content */
+}
+
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover; /* Ensures the video covers the whole background */
+}
+
+#home .content {
+    position: relative;
+    z-index: 1; /* Ensure content appears above the video */
+    text-align: center;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 20px;
+}
+
+#home .content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#home .content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+#home .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff5733;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#home .btn:hover {
+    background-color: #c4421e;
+}
+
+/* About Section */
+#about {
+    padding: 60px 0;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+/* Portfolio Section */
+#portfolio {
+    padding: 60px 0;
+    text-align: center;
+    background: #fff;
+}
+
+#portfolio h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.portfolio-item {
+    width: calc(33.333% - 20px);
+    background: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.portfolio-item h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.portfolio-item p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px 0;
+    background: #333;
+    color: white;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+#contact form textarea {
+    resize: none;
+    height: 100px;
+}
+
+#contact form button {
+    background-color: #ff5733;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#contact form button:hover {
+    background-color: #c4421e;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background: #333;
+    color: white;
+    text-align: center;
+}
