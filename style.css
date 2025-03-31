@@ -234,3 +234,33 @@ footer {
     color: white;
     text-align: center;
 }
+
+/* Styles for the skills selection */
+.skills-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically (optional) */
+    gap: 20px; /* Add space between the circles */
+    margin-top: 20px; /* Or adjust as needed */
+}
+
+.skill-box {
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Remove flex: 1; */
+}
+
+.skill-box:hover {
+    background-color: #007bff;
+    color: white;
+    transform: scale(1.05);
+}
