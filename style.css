@@ -264,3 +264,17 @@ footer {
     color: white;
     transform: scale(1.05);
 }
+
+.github-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.github-link:hover {
+    background-color: #0056b3;
+}
